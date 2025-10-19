@@ -19,13 +19,13 @@
       <div class="rounded-lg p-4">
         <div class="grid grid-cols-3 gap-3">
           <div
-            v-for="index in 14"
+            v-for="(image, index) in imageList"
             :key="index"
             :class="{ 'row-span-2': index === 2 }"
             class="rounded bg-gradient-to-br from-red-600 to-red-800"
           >
             <img
-              :src="'/src/assets/mega-launch/image-' + index + '.jpg'"
+              :src="image"
               :alt="'Launch Event Image ' + index"
               class="h-full w-full object-cover"
               loading="lazy"
@@ -37,8 +37,12 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "MegaLaunch",
-};
+<script setup>
+const images = import.meta.glob('../assets/mega-launch/*.jpg', { eager: true, import: 'default' })
+const imageList = Object.values(images).sort((a,b) => {
+  let aname = parseInt(a.split('.')[0].split('-')[1])
+  let bname = parseInt(b.split('.')[0].split('-')[1])
+
+  return aname - bname;
+})
 </script>
