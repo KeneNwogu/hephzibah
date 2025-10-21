@@ -420,9 +420,7 @@ const features = [
   /* background-position: 20% 100%;   */
 }
 
-img {
-  max-width: 100%;
-}
+
 
 #grotesque {
   font-family: "Bricolage Grotesque", sans-serif;

@@ -38,11 +38,35 @@
 </template>
 
 <script setup>
-const images = import.meta.glob('../assets/mega-launch/*.jpg', { eager: true, import: 'default' })
-const imageList = Object.values(images).sort((a,b) => {
-  let aname = parseInt(a.split('.')[0].split('-')[1])
-  let bname = parseInt(b.split('.')[0].split('-')[1])
+import image1 from '../assets/mega-launch/image-1.jpg';
+import image2 from '../assets/mega-launch/image-2.jpg';
+import image3 from '../assets/mega-launch/image-3.jpg';
+import image4 from '../assets/mega-launch/image-4.jpg';
+import image5 from '../assets/mega-launch/image-5.jpg';
+import image6 from '../assets/mega-launch/image-6.jpg';
+import image7 from '../assets/mega-launch/image-7.jpg';
+import image8 from '../assets/mega-launch/image-8.jpg';
+import image9 from '../assets/mega-launch/image-9.jpg';
+import image10 from '../assets/mega-launch/image-10.jpg';
+import image11 from '../assets/mega-launch/image-11.jpg';
+import image12 from '../assets/mega-launch/image-12.jpg';
+import image13 from '../assets/mega-launch/image-13.jpg';
+import image14 from '../assets/mega-launch/image-14.jpg';
 
-  return aname - bname;
-})
+const imageList = [
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+  image9,
+  image10,
+  image11,
+  image12,
+  image13,
+  image14
+]
 </script>
