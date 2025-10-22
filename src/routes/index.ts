@@ -7,8 +7,7 @@ import ContactPage from '../views/ContactPage.vue';
 const routes = [
     {
         path: '/',
-        name: 'Home',
-        component: Home
+        redirect: '/home'
     },
     {
         path: '/home',
