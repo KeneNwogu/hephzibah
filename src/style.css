@@ -9,5 +9,23 @@ body {
 }
 
 .grotesque {
-  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif !important;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('./assets/fonts/SFPRODISPLAYREGULAR.OTF');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('./assets/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF');
+  font-weight: 600;
+  font-style: italic;
+}
+
+.font-sf-pro {
+  font-family: 'SF Pro', sans-serif !important;
 }
