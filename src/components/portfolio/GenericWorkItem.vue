@@ -44,30 +44,30 @@ defineProps({
 </script>
 
 <template>
-  <div class="mx-auto p-4">
+  <div class="mx-auto lg:p-4 my-3">
     <div
       class="bg-white rounded-3xl overflow-hidden shadow-2xl"
       :style="{'border-color': mainBg, 'border-width': '12px', 'background-color': mainBg}"
     >
-      <div class="px-6 py-4" :style="{'background-color': headerBg}">
+      <div class="lg:px-6 lg:py-4 p-2" :style="{'background-color': headerBg}">
         <div class="flex items-start gap-3">
             <div>
-                <img class="w-28 h-auto" :src="logo" alt="">
+                <img class="lg:w-28 w-16 h-auto" :src="logo" alt="">
             </div>
           <div class="flex-1" :style="{'color': headerTextColor}">
-            <h1 class="text-xl font-bold">
+            <h1 class="lg:text-xl font-bold text-md">
               {{ name }},
               <span v-if="location" class="text-orange-500">{{ location }}</span>
             </h1>
-            <p class="text-xs mt-1 leading-tight w-[80%]">
-                {{ description }}
+            <p class="lg:text-xs mt-1 leading-tight w-[80%] text-[10px]">
+              {{ description }}
             </p>
           </div>
         </div>
       </div>
 
       <div class="mt-3" :style="{'background-color': mainBg}">
-        <div class="grid grid-cols-3 gap-2">
+        <div class="flex flex-col lg:grid lg:grid-cols-3 gap-2">
             <div 
                 v-for="img in images" 
                 class="aspect-[4/3] bg-gray-200 rounded-lg overflow-hidden"

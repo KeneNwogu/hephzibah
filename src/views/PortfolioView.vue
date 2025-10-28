@@ -37,8 +37,8 @@ import WaveCrest from "../components/portfolio/WaveCrest.vue";
       </div>
     </div>
 
-    <div class="px-24 pt-12">
-      <p class="w-[55%] mx-auto text-center text-5xl font-bold grotesque">Brand Activation & Marketing Case Studies</p>
+    <div class="lg:px-24 pt-12">
+      <p class="lg:w-[55%] mx-auto text-center lg:text-5xl font-bold grotesque text-3xl w-full">Brand Activation & Marketing Case Studies</p>
 
       <div class="mt-3 px-20">
         <GinoWork />
